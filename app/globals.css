@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    @apply bg-bg text-slate-200 font-sans antialiased;
+    min-height: 100dvh;
+  }
+
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-bg; }
+  ::-webkit-scrollbar-thumb { @apply bg-border rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-border-light; }
+}
+
+@layer components {
+  .card {
+    @apply bg-bg-card border border-border rounded-xl shadow-card;
+  }
+
+  .card-header {
+    @apply px-5 py-3 border-b border-border flex items-center gap-2;
+  }
+
+  .btn-primary {
+    @apply bg-nba-orange hover:bg-orange-500 text-white font-semibold
+           px-6 py-2.5 rounded-lg transition-all duration-150
+           active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply text-muted hover:text-slate-200 hover:bg-bg-hover
+           px-4 py-2 rounded-lg transition-all duration-150 text-sm font-medium;
+  }
+
+  .input {
+    @apply bg-bg-surface border border-border text-slate-200 placeholder-muted
+           rounded-lg px-4 py-2.5 text-sm w-full
+           focus:outline-none focus:border-nba-orange focus:ring-1 focus:ring-nba-orange
+           transition-colors duration-150;
+  }
+
+  .table-row-hover {
+    @apply hover:bg-bg-hover transition-colors duration-100 cursor-default;
+  }
+}
