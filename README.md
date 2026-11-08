@@ -6,6 +6,16 @@ Consome a [NBA Statics API](https://github.com/PedroADiniz/nba-statics-api) para
 
 ---
 
+## Telas
+
+| Agenda do dia | Análise H2H |
+|---|---|
+| ![Agenda do dia](docs/screenshots/agenda.png) | ![Análise H2H](docs/screenshots/h2h.png) |
+| **Perfil do jogador** | **Elenco do time** |
+| ![Perfil do jogador](docs/screenshots/jogador.png) | ![Elenco do time](docs/screenshots/time.png) |
+
+---
+
 ## Pré-requisitos
 
 | Ferramenta | Versão mínima |
